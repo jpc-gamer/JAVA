@@ -10,34 +10,31 @@ import java.util.Scanner;
  *
  * @author Aluno CA
  */
-
-public class While05 {
-        public static void main(String[] args) {
-             Scanner sc = new Scanner(System.in);
-            
-        
-        int numero = 0;
+public class ex06 {
+     public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+    
+    int numero = 0;
+        int numeromaior = 0;
         int x = 0;
-        int y;
+        int y = 0;
+        int z = 0;
         
         while(x < 10){
             System.out.println("Digite um número: ");
-            y = sc.nextInt();
-            
+            y = sc.nextInt(); 
+        
             if(y > numero){
-                numero = y;
+                y = numero;
+                z = numero;
+                
             }
             
             x++;
-            
         }
-        System.out.println("O maior número é: "+ numero);
-            
-     
-           
-      }
-}
         
-        
-    
+        System.out.println("O maior número é: "+numeromaior+"\nO segundo maior número é: "+z);
 
+     }
+    
+}
